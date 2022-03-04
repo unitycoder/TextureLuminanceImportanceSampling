@@ -94,7 +94,7 @@ public class TextureLuminanceImportanceSampling : MonoBehaviour
     ///<summary>
     /// Calculates the pixel luminance of a given X and Y in our RGB color map
     ///</summary>
-    float GettexturePixelLuminance(ColorRow[] _textureRGB, int _y, int _x)
+    float GetTexturePixelLuminance(ColorRow[] _textureRGB, int _y, int _x)
     {
         // We calculate the pixel luminance by summing R + G + B, an alternative to this would be textureRGB[i].colors[j].magnitude, howevever, this is faster
         float _pixelLuminance = _textureRGB[_y].colors[_x].x + _textureRGB[_y].colors[_x].y + _textureRGB[_y].colors[_x].z;
@@ -154,7 +154,7 @@ public class TextureLuminanceImportanceSampling : MonoBehaviour
             for (int j = 0; j < textureCaptureWidth; j++) // Width (X)
             {
                 // Get pixel luminance at current coordinate
-                float _pixelLuminance = GettexturePixelLuminance(_textureRGB, i, j); // Height, width
+                float _pixelLuminance = GetTexturePixelLuminance(_textureRGB, i, j); // Height, width
 
                 // Store pixel luminance at correct coordinate in the Y X luminance map
                 _textureLuminance[i].floats[j] = _pixelLuminance;
