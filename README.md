@@ -1,6 +1,6 @@
 # Texture luminance importance sampling in Unity C#
 
-![Preview](preview.jpg)
+![Preview](preview.gif)
 
 Using the per pixel RGB to calculate pixel luminance to importance sample random uniform generated samples over the image.
 
