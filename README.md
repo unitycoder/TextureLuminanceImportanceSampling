@@ -2,7 +2,11 @@
 
 ![Preview](preview.jpg)
 
-Open Scenes/Example and hit play. To enable/disable importance sampling, select the Texture gameobject in the scene and toggle "Importance Sampling Enabled" on the component.
+Using the per pixel RGB to calculate pixel luminance to importance sample random uniform generated samples over the image.
+
+## Usage
+
+Open Scenes/Example and hit play. To enable/disable importance sampling, select the Texture GameObject in the scene and toggle "Importance Sampling Enabled" on the component.
 
 ## Extra information
 
