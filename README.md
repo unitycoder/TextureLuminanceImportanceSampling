@@ -1,4 +1,4 @@
-# HDRI/texture luminance importance sampling in Unity C#
+# Texture luminance importance sampling in Unity C#
 
 ![Preview](preview.jpg)
 
